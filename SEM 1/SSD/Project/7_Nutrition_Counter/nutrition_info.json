@@ -1,0 +1,154 @@
+[
+  {
+    "sample01.jpeg": [
+      {
+        "value": 8.0,
+        "label": "Fat"
+      },
+      {
+        "value": 37.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 3.0,
+        "label": "Protein"
+      },
+      {
+        "value": 1.0,
+        "label": "Sugar"
+      }
+    ]
+  },
+  {
+    "sample02.jpeg": [
+      {
+        "value": 8.0,
+        "label": "Fat"
+      },
+      {
+        "value": 37.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 3.0,
+        "label": "Protein"
+      },
+      {
+        "value": 1.0,
+        "label": "Sugar"
+      }
+    ]
+  },
+  {
+    "sample03.jpeg": [
+      {
+        "value": 9.4,
+        "label": "Fat"
+      },
+      {
+        "value": 39.8,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 8.0,
+        "label": "Protein"
+      }
+    ]
+  },
+  {
+    "sample04.jpeg": [
+      {
+        "value": 45.0,
+        "label": "Fat"
+      },
+      {
+        "value": 375.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 48.0,
+        "label": "Protein"
+      },
+      {
+        "value": 25.0,
+        "label": "Sugar"
+      }
+    ]
+  },
+  {
+    "sample05.jpeg": [
+      {
+        "value": 4.0,
+        "label": "Fat"
+      },
+      {
+        "value": 46.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 11.0,
+        "label": "Protein"
+      }
+    ]
+  },
+  {
+    "sample11.jpeg": [
+      {
+        "value": 5.0,
+        "label": "Fat"
+      },
+      {
+        "value": 0.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 3.0,
+        "label": "Protein"
+      },
+      {
+        "value": 0.0,
+        "label": "Sugar"
+      }
+    ]
+  },
+  {
+    "sample12.jpeg": [
+      {
+        "value": 8.0,
+        "label": "Fat"
+      },
+      {
+        "value": 22.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 2.0,
+        "label": "Protein"
+      },
+      {
+        "value": 18,
+        "label": "Sugar"
+      }
+    ]
+  },
+  {
+    "sample13.jpeg": [
+      {
+        "value": 7.0,
+        "label": "Fat"
+      },
+      {
+        "value": 17.0,
+        "label": "Carbohydrate"
+      },
+      {
+        "value": 4.0,
+        "label": "Protein"
+      },
+      {
+        "value": 12.0,
+        "label": "Sugar"
+      }
+    ]
+  }
+]

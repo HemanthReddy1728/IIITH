@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gali Cricket Team Registration</title>
+    <!-- Include your external CSS file (styles.css) here -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark.css" id="darkModeStylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gali Cricket Team Registration</h2>
+        <form id="teamRegistrationForm">
+            <div class="form-group">
+                <label for="teamName">Team Name<span class="required"></span></label>
+                <input type="text" id="teamName" name="teamName" class="form-control" required>
+                <div class="error-message" id="teamNameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="teamCoach">Team Coach Name<span class="required"></span></label>
+                <input type="text" id="teamCoach" name="teamCoach" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="teamEmail">Team Email ID<span class="required"></span></label>
+                <input type="email" id="teamEmail" name="teamEmail" class="form-control" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="teamPassword">Password<span class="required"></span></label>
+                <div class="password-input">
+                    <input type="password" id="teamPassword" name="teamPassword" class="form-control" required>
+                    <button type="button" class="toggle-password-button" id="togglePasswordButtonTeamPassword">
+                        Show Password <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password<span class="required"></span></label>
+                <div class="password-input">
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required
+                        onblur="validatePasswordMatch()">
+                    <button type="button" class="toggle-password-button" id="togglePasswordButtonConfirmPassword">
+                        Show Password <i class="fas fa-eye"></i>
+                    </button>
+                    <div class="error-message" id="passwordMatchError"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="teamCaptain">Team Captain<span class="required"></span></label>
+                <select id="teamCaptain" name="teamCaptain" class="form-control" required>
+                    <option value="">Select Team Captain</option>
+                    <option value="captain1">Captain 1</option>
+                    <option value="captain2">Captain 2</option>
+                    <option value="captain3">Captain 3</option>
+                    <option value="captain4">Captain 4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="teamMembers">Team Members<span class="required"></span></label>
+                <div id="teamMembers" class="team-members memberList" ondrop="drop(event, 'teamMembers')" ondragover="allowDrop(event)">
+                    <!-- Selected team members will appear here -->
+                </div>
+                <div class="error-message" id="teamMembersError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="teamMembers">Available Team Members</label>
+                <div id="availableMembers" class="available-members memberList" ondrop="drop(event, 'availableMembers')" ondragover="allowDrop(event)">
+                        <!-- Add available team members here -->
+                    <div class="draggable-item" draggable="true" id="member1" >Team Member 1</div>
+                    <div class="draggable-item" draggable="true" id="member2" >Team Member 2</div>
+                    <div class="draggable-item" draggable="true" id="member3" >Team Member 3</div>
+                    <div class="draggable-item" draggable="true" id="member4" >Team Member 4</div>
+                    <div class="draggable-item" draggable="true" id="member5" >Team Member 5</div>
+                    <div class="draggable-item" draggable="true" id="member6" >Team Member 6</div>
+                    <div class="draggable-item" draggable="true" id="member7" >Team Member 7</div>
+                    <div class="draggable-item" draggable="true" id="member8" >Team Member 8</div>
+                    <div class="draggable-item" draggable="true" id="member9" >Team Member 9</div>
+                    <div class="draggable-item" draggable="true" id="member10" >Team Member 10</div>
+                    <div class="draggable-item" draggable="true" id="member11" >Team Member 11</div>
+                    <div class="draggable-item" draggable="true" id="member12" >Team Member 12</div>
+                    <div class="draggable-item" draggable="true" id="member13" >Team Member 13</div>
+                    <div class="draggable-item" draggable="true" id="member14" >Team Member 14</div>
+                    <div class="draggable-item" draggable="true" id="member15" >Team Member 15</div>
+                    <div class="draggable-item" draggable="true" id="member16" >Team Member 16</div>
+                    <div class="draggable-item" draggable="true" id="member17" >Team Member 17</div>
+                    <div class="draggable-item" draggable="true" id="member18" >Team Member 18</div>
+                    <div class="draggable-item" draggable="true" id="member19" >Team Member 19</div>
+                    <div class="draggable-item" draggable="true" id="member20" >Team Member 20</div>
+                </div>
+            </div>
+
+            <!-- <div id="div5">
+                <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+                </div>
+            
+                <p id="demo"></p>
+            
+                <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div> -->
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+            
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script>
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
+
+        function dragging(event) {
+            document.getElementById("demo").innerHTML = "The p element is being dragged";
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("demo").innerHTML = "The p element was dropped";
+        }
+    </script>
+</body>
+            
+</html>

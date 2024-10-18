@@ -1,0 +1,33 @@
+user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/IP$ python3 language_model.py i ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py i ./Ulysses-JamesJoyce.txt;
+input sentence: only look at her
+P_LI:  3.6821543180034666e-12
+perplexity_LI:  42.9946088301603
+input sentence: it is music
+P_LI:  2.80398945099537e-07
+perplexity_LI:  12.360535058971418
+user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/IP$ python3 language_model.py i ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py i ./Ulysses-JamesJoyce.txt;
+input sentence: professor michael
+P_LI:  2.6326704600002675e-06
+perplexity_LI:  13.059324093681346
+input sentence: rats vats
+P_LI:  3.815258881079182e-11
+perplexity_LI:  121.25375523554519
+user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/IP$ python3 language_model.py i ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py i ./Ulysses-JamesJoyce.txt;
+input sentence: yes she called yesterday with her father
+P_LI:  6.859704759726529e-33
+perplexity_LI:  1645.7711978001782
+input sentence: i enquired after their brother of course
+P_LI:  2.9243207514353016e-32
+perplexity_LI:  1423.631206716672
+user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/IP$ python3 language_model.py i ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py i ./Ulysses-JamesJoyce.txt;
+input sentence: yes she called yesterday with her father
+P_LI:  6.859704759726529e-33
+perplexity_LI:  1645.7711978001782
+i enquired after their brother of courseinput sentence: 
+P_LI:  2.9243207514353016e-32
+perplexity_LI:  1423.631206716672
+user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/IP$ python3 generator.py i ./PrideandPrejudice-JaneAusten.txt 3; python3 generator.py i ./Ulysses-JamesJoyce.txt 3;
+input sentence: i cannot
+{'bear': 0.11435899402137567, 'think': 0.09572206418430934, 'find': 0.06353901948073927, 'imagine': 0.06343132808407247, 'understand': 0.06342271277233912, 'wonder': 0.06069197323803686, 'make': 0.041891352478037026, 'see': 0.04180950701657027, 'i': 0.03858422132144402, 'but': 0.03500025164037329, 'believe': 0.031976277221969863, 'quite': 0.031959046598503175, 'tell': 0.031911662383969794, 'answer': 0.031864278169436405, 'help': 0.03181258629903635, 'talk': 0.031769509740369635, 'exactly': 0.03176089442863629, 'comprehend': 0.031726433181702915, 'blame': 0.031726433181702915, 'catch': 0.0316833566230362, 'fix': 0.0316833566230362, 'misunderstand': 0.03167474131130285}
+input sentence: we must
+{'be': 0.40500591510315304, 'go': 0.21151134392837548, 'take': 0.19505088476235347, 'also': 0.1884318562061182}

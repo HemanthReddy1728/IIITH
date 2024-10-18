@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify New Releases</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="jumbotron text-center">
+        <h1 class="display-4">New Releases on Spotify</h1>
+    </header>
+    <br>&nbsp;
+    <div class="container">
+        <!-- Input fields for limit, offset, and country code -->
+        <div class="form-group">
+            <!-- Country Codes -->
+            <label for="country">Select <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">Country</a>:</label>
+            <!-- Country Dropdown -->
+            <select id="country">
+                <!-- Options will be populated here -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="limit">Limit:</label>
+            <input type="number" id="limit" value="1" min="1" />
+        </div>
+        <div class="form-group">
+            <label for="offset">Offset:</label>
+            <input type="number" id="offset" value="0" min="0" />
+        </div>
+        <!-- Button to fetch new releases -->
+        <button id="fetchButton">Fetch New Releases</button>
+        <!-- Container to display new releases -->
+        <div class="row" id="newReleases"></div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

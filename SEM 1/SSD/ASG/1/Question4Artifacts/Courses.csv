@@ -1,0 +1,13 @@
+course_id,course_name
+C001,Pandas
+C002,Flask
+C003,Django
+C004,Scikit
+C005,Tensorflow
+C006,OOP
+C007,Multithreading
+C008,Control flow and iterations
+C009,CRUD operations with SQL
+C010,PyTorch
+C011,Keras
+C012,Numpy

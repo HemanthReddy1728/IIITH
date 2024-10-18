@@ -1,0 +1,189 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+    --primary: #1aac83;
+    --error: #e7195a;
+}
+
+header {
+    background: #fff;
+}
+
+header .custom-container {
+    width: 100vw;
+    height: 80px;
+    margin: 0;
+    padding: 10px;
+    background-color: #1aac83;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+.pages {
+    width: 100vw;
+    margin: 0;
+}
+
+.analysis-details {
+    background: #fff;
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.analyis-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+.analyis-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.analysis-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+}
+
+/* new analysis form */
+label,
+input {
+    display: block;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a,
+nav button {
+    margin-left: 10px;
+}
+
+/* auth forms */
+form.signup,
+form.login {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    gap: 10px;
+    margin: 10px;
+    /* min-height: calc(100vh - 80px);
+  height: auto; */
+}
+
+.home-data {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 10px;
+}
+
+.analysis {
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    gap: 20px;
+}
+
+.basic-data-heading {
+    margin: 0;
+    font-size: 4em;
+    color: gray;
+}
+
+.basic-data-value {
+    margin: 0;
+    font-size: 4em;
+    color: rgb(71, 126, 222);
+}
+
+.image-container {
+    background-image: url('../../public/nutrition.png');
+    /* Replace with the actual path to your image */
+    background-size: cover;
+    /* You can use 'contain' or other values depending on your needs */
+    background-position: center;
+    /* You can adjust the position */
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+}
+
+.inline-container p {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.custom-label {
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: #1aac83;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    display: "inline-block"
+}
+
+/* table, td, th {
+  border: 1px solid black;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}

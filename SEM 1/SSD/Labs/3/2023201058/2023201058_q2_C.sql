@@ -1,0 +1,1 @@
+select title as book_name, author_name, max(date_issued) as recent_date_issued from authors natural join books natural join issued_users group by title, author_name;

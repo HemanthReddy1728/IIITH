@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstring>
+#include <vector>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <string>
+#include <cstdlib>
+#include <pwd.h>
+#include <wordexp.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include <iomanip>
+#include <grp.h>
+#include <fstream>
+#include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/utsname.h>
+#include <errno.h>
+#include <cstdio>
+#include <fcntl.h>
+#include <csignal>
+#include <algorithm>
+#include <termios.h>
+

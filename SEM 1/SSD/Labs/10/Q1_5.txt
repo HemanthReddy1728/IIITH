@@ -1,0 +1,11 @@
+Salary,Age,Class,Status
+45010.01,34,C,False
+10879.42,24,D,True
+38479.34,40,C,False
+28108.06,50,C,True
+38622.39,26,E,False
+26770.97,37,C,True
+18035.37,33,A,False
+32013.21,26,C,False
+17579.09,22,E,True
+23330.21,33,F,False

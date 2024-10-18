@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrients</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #a4c2e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #3498db;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="/static/pie_chart.png" alt="Pie Chart">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nutrient</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pair in data.split(', ') %}
+                {% set split_pair = pair.split(':') %}
+                {% if split_pair|length == 2 %}
+                    {% set nutrient, weight = split_pair %}
+                    <tr>
+                        <td>{{ nutrient.strip('{}').strip("'") }}</td>
+                        <!-- <td>{{ weight.strip('{}').strip("'") }}</td> -->
+                        <td>{{ weight.strip('{}').strip("'")|replace("'", "") + "g"}}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

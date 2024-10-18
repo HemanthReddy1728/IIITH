@@ -1,0 +1,1 @@
+select * from (select author_name, count(title) as book_count from authors natural join books group by author_name order by book_count desc limit 3) sub order by author_name;

@@ -1,0 +1,27 @@
+(.env) user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/SGT$ python3 language_model.py g ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py g ./Ulysses-JamesJoyce.txt ;
+input sentence: intending to trace their route
+P_SGT:  0.15435627198436722
+perplexity_SGT:  1.2630904888387882
+input sentence: u s laws alone swamp our small staff
+P_SGT:  9.804426550917632e-57
+perplexity_SGT:  123506.23738515539
+(.env) user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/SGT$ python3 language_model.py g ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py g ./Ulysses-JamesJoyce.txt ;
+input sentence: jane was not happy
+P_SGT:  1.021110265407819e-14
+perplexity_SGT:  99.70200872356018
+input sentence: i suppose we can do so too
+P_SGT:  7.753647058997725e-14
+perplexity_SGT:  20.46677414997324
+(.env) user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/SGT$ python3 language_model.py g ./PrideandPrejudice-JaneAusten.txt ; python3 language_model.py g ./Ulysses-JamesJoyce.txt ;
+input sentence: jane was not happy
+P_SGT:  1.021110265407819e-14
+perplexity_SGT:  99.70200872356018
+i suppose we can do so too
+input sentence: P_SGT:  7.753647058997725e-14
+perplexity_SGT:  20.46677414997324
+(.env) user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/SGT$ python3 generator.py g ./PrideandPrejudice-JaneAusten.txt 3; python3 generator.py g ./Ulysses-JamesJoyce.txt 3;
+input sentence: the officers
+{'and': 0.4267240665289723, '<EOS>': 0.2351833384862487, 'themselves': 0.030735690453161716, 'cried': 0.030735690453161716, 'to': 0.030735690453161716, 'had': 0.030735690453161716, 'who': 0.030735690453161716, 'collins': 0.030735690453161716, 'he': 0.030735690453161716, 'always': 0.030735690453161716, 'will': 0.030735690453161716, 'at': 0.030735690453161716, 'may': 0.030735690453161716}
+input sentence: shut your
+{'eyes': 0.9468014877745826, 'obstropolos': 0.05319851222541738}
+(.env) user@user-Latitude-3400:/media/user/New Volume/IIITH/SEM 2/INLP/ASG/1/SGT$ 

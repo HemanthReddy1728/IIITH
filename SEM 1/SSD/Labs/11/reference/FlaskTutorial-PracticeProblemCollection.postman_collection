@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "8b7b5dd5-254b-4036-8983-72877217ca61",
+		"name": "Flask Tutorial Practice Question",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add new Shoe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shoe_id\":1,\r\n    \"shoe_brand\":\"Nike\",\r\n    \"shoe_name\":\"Air Force 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/shoes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"shoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":1,\r\n    \"user_name\":\"Yash\",\r\n    \"user_gender\":\"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add shoes for user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/add-shoe?shoe_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"add-shoe"
+					],
+					"query": [
+						{
+							"key": "shoe_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display Shoes for user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/display-shoes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"display-shoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Render shoes for user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/display-shoes-render",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"display-shoes-render"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

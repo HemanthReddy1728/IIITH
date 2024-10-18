@@ -1,0 +1,3 @@
+hlo
+user@user-Latitude-3400:~/Desktop/2023201058_Assignment2> 
+user@user-Latitude-3400:~/Desktop/2023201058_Assignment2> CTRL-D pressed. Exiting shell.

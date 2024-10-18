@@ -1,0 +1,1 @@
+SELECT genre, COUNT(user_id) as total_user_count from books natural join authors natural join issued_users GROUP BY genre;

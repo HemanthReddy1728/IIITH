@@ -1,0 +1,1 @@
+SELECT food_type, avg(price) as avg_food_type FROM SSDLab.menu where price >= 400 group by food_type;

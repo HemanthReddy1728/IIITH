@@ -1,0 +1,85 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styles for both pages */
+body {
+    /* background: linear-gradient(135deg, orange 50%, cyan); */
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    margin: 10% auto;
+    padding: 50px;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* Styling for the Login Page */
+#username,
+#password {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#username:hover,
+#password:hover {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: purple;
+}
+
+/* Styling for the Video Page */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 10px;
+    border: 5px solid #000;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 5px solid #000;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}

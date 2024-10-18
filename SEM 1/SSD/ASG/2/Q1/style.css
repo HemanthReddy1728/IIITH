@@ -1,0 +1,59 @@
+/* Customize the body background and font color */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav {
+    display: flex;
+}
+
+/* Style the header */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Style the subheading */
+p {
+    font-size: 18px;
+}
+
+/* Style the recent updates */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the list of recent updates */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add Bootstrap classes for buttons and links */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+}

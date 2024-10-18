@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Binary Data Example</title>
+</head>
+
+<body>
+
+    <input type="file" id="fileInput" />
+    <button onclick="readFile()">Read File</button>
+    <pre id="binaryOutput"></pre>
+
+    <script>
+        function readFile() {
+            const fileInput = document.getElementById('fileInput');
+            const binaryOutput = document.getElementById('binaryOutput');
+
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const binaryData = new Uint8Array(e.target.result);
+
+                    // binaryOutput.textContent = binaryString;
+                    console.log(binaryData)
+                };
+
+                reader.readAsArrayBuffer(file);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

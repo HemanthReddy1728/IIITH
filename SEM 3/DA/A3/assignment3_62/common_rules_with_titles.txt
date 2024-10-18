@@ -1,0 +1,17 @@
+Rule -> {Recommendation} , Support , Confidence
+Lord of the Rings: The Return of the King, The (2003) -> {Lord of the Rings: The Fellowship of the Ring, The (2001)} , 0.18616144975288304 , 0.7635135135135136
+Lord of the Rings: The Two Towers, The (2002) -> {Lord of the Rings: The Fellowship of the Ring, The (2001)} , 0.15980230642504117 , 0.7519379844961239
+Star Wars: Episode VI - Return of the Jedi (1983) -> {Star Wars: Episode IV - A New Hope (1977)} , 0.18616144975288304 , 0.7337662337662338
+Star Wars: Episode V - The Empire Strikes Back (1980) -> {Star Wars: Episode IV - A New Hope (1977)} , 0.19604612850082373 , 0.7300613496932515
+Lord of the Rings: The Fellowship of the Ring, The (2001) -> {Lord of the Rings: The Return of the King, The (2003)} , 0.18616144975288304 , 0.7290322580645161
+Seven (a.k.a. Se7en) (1995) -> {Pulp Fiction (1994)} , 0.17957166392092258 , 0.6855345911949685
+Fight Club (1999) -> {Matrix, The (1999)} , 0.18616144975288304 , 0.6726190476190477
+Star Wars: Episode VI - Return of the Jedi (1983) -> {Matrix, The (1999)} , 0.1696869851729819 , 0.6688311688311689
+Star Wars: Episode V - The Empire Strikes Back (1980) -> {Matrix, The (1999)} , 0.17957166392092258 , 0.6687116564417178
+Saving Private Ryan (1998) -> {Matrix, The (1999)} , 0.15980230642504117 , 0.6643835616438356
+Star Wars: Episode VI - Return of the Jedi (1983) -> {Star Wars: Episode V - The Empire Strikes Back (1980)} , 0.16639209225700163 , 0.6558441558441558
+Jurassic Park (1993) -> {Forrest Gump (1994)} , 0.19769357495881384 , 0.6557377049180327
+Lord of the Rings: The Return of the King, The (2003) -> {Matrix, The (1999)} , 0.15815485996705106 , 0.6486486486486486
+Schindler's List (1993) -> {Shawshank Redemption, The (1994)} , 0.17298187808896212 , 0.6441717791411044
+Lord of the Rings: The Fellowship of the Ring, The (2001) -> {Matrix, The (1999)} , 0.1630971993410214 , 0.6387096774193547
+Usual Suspects, The (1995) -> {Shawshank Redemption, The (1994)} , 0.171334431630972 , 0.6380368098159509

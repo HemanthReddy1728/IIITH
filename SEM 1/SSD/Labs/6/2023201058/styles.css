@@ -1,0 +1,204 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.form-control {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Show password checkbox */
+.show-password {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.show-password input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button styles */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Custom form element for Team Members */
+.team-members {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    min-height: 150px;
+    background-color: #fff;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+#memberList {
+    min-height: 150px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Custom styles for dropdown select */
+select.form-control {
+    appearance: none;
+    background-image: url("arrow-down.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+/* Custom styles for draggable items */
+.draggable-item {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #f0f0f0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+/* Custom styles for drag-and-drop feedback */
+.drag-over {
+    background-color: #f9f9f9;
+    border: 2px dashed #007bff;
+}
+
+/* ... (Previous CSS code) ... */
+
+/* Toggle password button styles */
+.toggle-password-button {
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+    margin-left: 5px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Draggable item styles */
+.draggable-item {
+    -webkit-app-region: no-drag;
+    /* Prevent dragging for specific elements */
+}
+
+/* Available team members styles */
+.available-members {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 150px;
+    background-color: #fff;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+#div5 {
+    border: 2px solid blue;
+    margin-left: 2%;
+    width: 30%;
+    /* float:right; */
+}

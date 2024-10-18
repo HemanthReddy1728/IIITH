@@ -1,0 +1,6 @@
+Go to directory where you want to clone github repo
+Run
+git clone https://github.com/jayrambhia/Install-OpenCV.git
+cd to Install-OpenCV.git/Ubuntu
+Run chmod +x *
+Run ./opencv_latest.sh 

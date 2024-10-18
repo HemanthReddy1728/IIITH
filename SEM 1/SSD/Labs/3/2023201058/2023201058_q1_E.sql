@@ -1,0 +1,1 @@
+SELECT dish_name, price FROM SSDLab.menu WHERE price > (SELECT MAX(price) FROM SSDLab.menu where food_type = 'veg') and food_type = 'non-veg';

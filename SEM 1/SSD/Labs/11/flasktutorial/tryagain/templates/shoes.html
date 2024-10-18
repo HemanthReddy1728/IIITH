@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shoes</title>
+</head>
+
+<body>
+    <h1>Shoes</h1>
+    <ul>
+        {% for shoe in shoes %}
+        <li>{{ shoe.brand }} - {{ shoe.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

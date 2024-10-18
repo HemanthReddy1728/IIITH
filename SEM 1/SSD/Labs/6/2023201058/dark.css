@@ -1,0 +1,34 @@
+/* dark.css - Dark Mode Styles */
+
+/* Dark Mode Styles (overrides light mode styles) */
+body.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Customize dark mode styles as needed */
+.dark .container {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark h2 {
+    color: #fff;
+}
+
+.dark .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #666;
+}
+
+.dark .btn-primary {
+    background-color: #666;
+    color: #fff;
+}
+
+.dark .team-members {
+    background-color: #333;
+    border-color: #666;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Shoes</title>
+</head>
+<body>
+    <h1>List of User Shoes</h1>
+
+    <p>User ID: {{ user_id }}</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Shoe Name</th>
+                <th>Shoe Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for shoe in shoes %}
+                <tr>
+                    <td>{{ shoe.name }}</td>
+                    <td>{{ shoe.brand }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

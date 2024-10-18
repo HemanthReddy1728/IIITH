@@ -1,0 +1,45 @@
+/* Home.css */
+
+/* Styles for the home container */
+.home-container {
+   
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 8%, rgba(9,9,121,0.39480804528842783) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  /* Styles for the welcome text */
+  .welcome-text {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the description paragraph */
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  /* Home.css */
+
+/* Home.css */
+.brand-title {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Change the color to your preferred color */
+    font-family: "Helvetica Neue", sans-serif; /* Use your preferred font family */
+    /* Add any other styles you desire */
+    position: absolute;
+    top: 10px; /* Adjust the top spacing as needed */
+    left: 10px; /* Adjust the left spacing as needed */
+  }
+  
+  .brand-title-gpt {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #666; /* Change the color to your preferred color */
+    font-family: "Arial", sans-serif; /* Use your preferred font family */
+    /* Add any other styles you desire */
+    position: absolute;
+    top: 50px; /* Adjust the top spacing as needed */
+    left: 10px; /* Adjust the left spacing as needed */
+  }
+    

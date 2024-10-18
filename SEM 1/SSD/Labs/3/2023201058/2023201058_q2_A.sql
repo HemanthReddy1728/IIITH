@@ -1,0 +1,1 @@
+select user_name, title, author_name from books natural join authors natural join issued_users where (title is not null and author_name is not null);
