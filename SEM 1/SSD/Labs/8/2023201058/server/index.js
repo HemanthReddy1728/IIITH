@@ -8,7 +8,7 @@ const UserModel = require('./models/User')
 const questionModel = require('./models/questions')
 const HistoryModel = require('./models/Hist')
 const ToDoModel = require('./models/todo')
-
+const lusca = require('lusca');
 const app = express()
 app.use(express.json())
 app.use(cors({
@@ -17,7 +17,7 @@ app.use(cors({
     credentials: true
 }))
 app.use(cookieParser())
-
+app.use(lusca.csrf())
 mongoose.connect('mongodb://127.0.0.1:27017/GPTLITEN');
 
 
