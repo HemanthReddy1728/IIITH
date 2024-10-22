@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const cors = require("cors")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const crypto = require('crypto')
 const cookieParser = require('cookie-parser')
 const multer = require('multer')
 const path = require('path')
@@ -20,6 +21,11 @@ app.use(cookieParser())
 app.use(express.static('public'))
 
 mongoose.connect('mongodb://127.0.0.1:27017/blog');
+
+const encrypt = (text) => {
+    const cipher = crypto.createCipher('aes-256-ctr', 'encryption-password');
+    return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');
+}
 
 const verifyUser = (req, res, next) => {
     const token = req.cookies.token;
@@ -64,7 +70,7 @@ app.post('/login', (req, res) => {
                 if(response) {
                     const token = jwt.sign({email: user.email, username: user.username},
                         "jwt-secret-key", {expiresIn: '1d'})
-                    res.cookie('token', token)
+                    res.cookie('token', encrypt(token))
                     return res.json("Success")
                 } else {
                     return res.json("Password is incorrect");
