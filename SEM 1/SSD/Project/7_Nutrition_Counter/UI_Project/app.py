@@ -105,7 +105,7 @@ def login():
             password = request.form.get('password')
             uname = request.form.get('username')
             user = User.query.filter_by(username=uname).first()
-            print(uname, password, user)
+            print(uname, user)
             if user:
                 print('Login successful!', 'success')
                 return render_template("upload.html")
