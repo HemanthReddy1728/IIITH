@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.mysql import JSON
 from sqlalchemy.orm import Session, attributes
 import json
-
+import os
 # Initialize flask app
 app = Flask(__name__)
 
@@ -258,4 +258,5 @@ def customer_render_bill():
         return custom_error_response("There is some issue. Please try again") # return custom_error_response("Customer not found"), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() in ['true', '1', 't']
+    app.run(debug=debug_mode)
