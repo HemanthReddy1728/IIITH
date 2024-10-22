@@ -35,7 +35,10 @@ def upload_file():
 
     if file and allowed_file(file.filename):
         filename = "sampleImage." + file.filename.rsplit(".", 1)[1].lower()
-        file.save(os.path.join(app.config["uploadFolder"], filename))
+        fullpath = os.path.normpath(os.path.join(app.config["uploadFolder"], filename))
+        if not fullpath.startswith(app.config["uploadFolder"]):
+            return render_template('FrontEnd.html', error="Invalid file path.")
+        file.save(fullpath)
         run_script("code1.py")
         data = run_script("analyseData.py")
         # capture_output=True,
