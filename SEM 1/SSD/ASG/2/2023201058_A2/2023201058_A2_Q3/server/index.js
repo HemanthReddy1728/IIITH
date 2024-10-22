@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken')
 const cookieParser = require('cookie-parser')
 const multer = require('multer')
 const path = require('path')
+const lusca = require('lusca')
 const UserModel = require('./models/UserModel')
 const PostModel = require('./models/PostModel')
 
@@ -18,6 +19,7 @@ app.use(cors({
 }))
 app.use(cookieParser())
 app.use(express.static('public'))
+app.use(lusca.csrf())
 
 mongoose.connect('mongodb://127.0.0.1:27017/chatapp');
 
