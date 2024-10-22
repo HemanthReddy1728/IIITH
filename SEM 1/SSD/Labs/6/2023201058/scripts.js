@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const modal = document.getElementById('myModal');
             const modalMessage = document.getElementById('modalMessage');
-            modalMessage.innerHTML = alertMessage;
+            modalMessage.textContent = alertMessage;
             modal.style.display = 'block';
 
             const closeButton = document.getElementsByClassName('close')[0];
