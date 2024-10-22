@@ -6,6 +6,7 @@ const EmployeeModel = require('./models/Employee');
 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 const cookieParser = require('cookie-parser');
 
 const app = express();
@@ -19,8 +20,24 @@ app.use(cookieParser());
 
 mongoose.connect('mongodb://localhost:27017/employee');
 
+const algorithm = 'aes-256-ctr';
+const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
+
+const encrypt = (text) => {
+    const cipher = crypto.createCipher(algorithm, secretKey);
+    const encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
+    return encrypted.toString('hex');
+};
+
+const decrypt = (hash) => {
+    const decipher = crypto.createDecipher(algorithm, secretKey);
+    const decrypted = Buffer.concat([decipher.update(Buffer.from(hash, 'hex')), decipher.final()]);
+    return decrypted.toString();
+};
+
 const verifyUser = (req, res, next) => {
-    const token = req.cookies.token;
+    const encryptedToken = req.cookies.token;
+    const token = decrypt(encryptedToken);
     console.log(token);
 
     if(!token) {
@@ -75,7 +92,8 @@ app.post('/login', (req, res) => {
                 } 
                 if (response) {
                     const token = jwt.sign({ email: user.email }, "jwt-secret-key", { expiresIn: "1d" });
-                    res.cookie('token', token);
+                    const encryptedToken = encrypt(token);
+                    res.cookie('token', encryptedToken);
                     res.json("Success");
                 }
                 else {
