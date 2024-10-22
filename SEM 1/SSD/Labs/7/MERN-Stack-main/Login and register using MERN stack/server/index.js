@@ -3,6 +3,13 @@ const mongoose = require('mongoose')
 const cors = require("cors")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const crypto = require('crypto')
+const encryptionKey = 'encryption-secret-key'; // Use a secure key in production
+
+function encrypt(text) {
+    const cipher = crypto.createCipher('aes-256-ctr', encryptionKey);
+    return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');
+}
 const cookieParser = require('cookie-parser')
 const UserModel = require('./models/User')
 
@@ -59,7 +66,8 @@ app.post('/login', (req, res) => {
                 if(response) {
                   const token = jwt.sign({email: user.email, role: user.role},
                         "jwt-secret-key", {expiresIn: '1d'})  
-                    res.cookie('token', token)
+                    const encryptedToken = encrypt(token);
+                    res.cookie('token', encryptedToken)
                     return res.json({Status: "Success", role: user.role})
                 }else {
                     return res.json("The password is incorrect")
