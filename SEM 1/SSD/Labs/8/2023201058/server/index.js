@@ -235,7 +235,7 @@ app.delete('/history', verifyUser, async (req, res) => {
 app.post('/login', (req, res) => {
     const { name, password } = req.body;
 
-    UserModel.findOne({ name: name })
+    UserModel.findOne({ name: { $eq: name } })
         .then(user => {
             if (user) {
                 bcrypt.compare(password, user.password, (err, response) => {
