@@ -291,12 +291,13 @@ public:
             delete[] heap;
             heap = newHeap;
             capacity = newCapacity;
-            printDetails();
+            
         }
 
         heap[size] = el;
         maxHeapifyUp(size);
         size++;
+        
         printDetails();
     }
 
