@@ -435,12 +435,13 @@ public:
             delete[] heap;
             heap = newHeap;
             capacity = newCapacity;
-            printDetails();
+            
         }
 
         heap[size] = el;
         minHeapifyUp(size);
         size++;
+        printDetails();
         printDetails();
     }
 
