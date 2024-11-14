@@ -653,8 +653,9 @@ public:
             }
 
             // Delete the old heap and update capacity.
-            delete[] heap;
+            int *oldHeap = heap;
             heap = newHeap;
+            delete[] oldHeap;
             capacity = newCapacity;
             // printDetails();
         }
