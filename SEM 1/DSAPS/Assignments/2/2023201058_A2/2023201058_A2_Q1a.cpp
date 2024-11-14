@@ -289,6 +289,7 @@ public:
 
             // Delete the old heap and update capacity.
             delete[] heap;
+            heap = nullptr;
             heap = newHeap;
             capacity = newCapacity;
             printDetails();
